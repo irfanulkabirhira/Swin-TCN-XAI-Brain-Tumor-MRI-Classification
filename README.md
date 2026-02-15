@@ -29,6 +29,39 @@ Swin-TCN-XAI-Brain-Tumor-MRI-Classification/
 │   ├── gradcam_results.png
 │
 └── LICENSE
+## Repository Structure
+
+```text
+Swin-TCN-XAI-Brain-Tumor-MRI-Classification/
+│
+├── README.md
+├── requirements.txt
+├── train.py
+├── test.py
+│
+├── model/
+│   ├── swin_tcn_model.py
+│   └── tcn.py
+│
+├── explainability/
+│   ├── gradcam.py
+│   ├── shap_analysis.py
+│   └── lime_analysis.py
+│
+├── preprocessing/
+│   ├── preprocessing.py
+│   └── augmentation.py
+│
+├── notebooks/
+│   ├── training.ipynb
+│   └── shap_analysis.ipynb
+│
+├── results/
+│   ├── confusion_matrix.png
+│   └── gradcam_results.png
+│
+└── LICENSE
+```
 
 # Swin-TCN-XAI: Explainable Brain Tumor MRI Classification
 
