@@ -1,37 +1,6 @@
 # Swin-TCN-XAI-Brain-Tumor-MRI-Classification
-Official implementation of "Swin-TCN-XAI: A Hybrid Transformer-Convolutional Framework for Explainable Brain Tumor MRI Classification". This repository includes model training, evaluation, Grad-CAM, SHAP, and LIME explainability, and reproducible experimental pipeline.
+Official implementation of "Swin-TCN-XAI: A Hybrid Transformer-Convolutional Framework for Explainable Brain Tumor MRI Classification". This repository includes model training, evaluation, Grad-CAM, SHAP, and LIME explainability, and a reproducible experimental pipeline.
 
-Swin-TCN-XAI-Brain-Tumor-MRI-Classification/
-│
-├── README.md
-├── requirements.txt
-├── train.py
-├── test.py
-├── model/
-│   ├── swin_tcn_model.py
-│   ├── tcn.py
-│
-├── explainability/
-│   ├── gradcam.py
-│   ├── shap_analysis.py
-│   ├── lime_analysis.py
-│
-├── preprocessing/
-│   ├── preprocessing.py
-│   ├── augmentation.py
-│
-├── notebooks/
-│   ├── training.ipynb
-│   ├── shap_analysis.ipynb
-│
-├── results/
-│   ├── confusion_matrix.png
-│   ├── gradcam_results.png
-│
-└── LICENSE
-## Repository Structure
-
-```text
 Swin-TCN-XAI-Brain-Tumor-MRI-Classification/
 │
 ├── README.md
