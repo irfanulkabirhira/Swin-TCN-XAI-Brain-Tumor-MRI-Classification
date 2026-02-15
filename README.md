@@ -1,6 +1,14 @@
 # Swin-TCN-XAI-Brain-Tumor-MRI-Classification
 Official implementation of "Swin-TCN-XAI: A Hybrid Transformer-Convolutional Framework for Explainable Brain Tumor MRI Classification". This repository includes model training, evaluation, Grad-CAM, SHAP, and LIME explainability, and a reproducible experimental pipeline.
 
+Swin+TCN+XAI Final one.ipynb
+→ notebooks/swin_tcn_xai_final.ipynb
+
+Preprocessing steps.ipynb
+→ notebooks/preprocessing_steps.ipynb
+
+
+
 ## Repository Structure
 
 ```text
@@ -12,25 +20,28 @@ Swin-TCN-XAI-Brain-Tumor-MRI-Classification/
 ├── test.py
 │
 ├── model/
-│   ├── swin_tcn_model.py
-│   └── tcn.py
+│   ├── swin_backbone.py
+│   ├── tcn.py
+│   └── swin_tcn_xai.py
+│
+├── preprocessing/
+│   ├── data_loader.py
+│   ├── preprocessing.py
+│   └── augmentation.py
 │
 ├── explainability/
 │   ├── gradcam.py
 │   ├── shap_analysis.py
 │   └── lime_analysis.py
 │
-├── preprocessing/
-│   ├── preprocessing.py
-│   └── augmentation.py
-│
 ├── notebooks/
-│   ├── training.ipynb
-│   └── shap_analysis.ipynb
+│   ├── swin_tcn_xai_final.ipynb
+│   └── preprocessing_steps.ipynb
 │
 ├── results/
 │   ├── confusion_matrix.png
-│   └── gradcam_results.png
+│   ├── gradcam.png
+│   └── shap.png
 │
 └── LICENSE
 
@@ -76,3 +87,15 @@ Install dependencies:
 
 ```bash
 pip install -r requirements.txt
+
+## Code Structure
+
+The repository contains:
+
+- preprocessing/: Data loading and preprocessing pipeline
+- model/: Swin Transformer, TCN, and hybrid Swin-TCN-XAI model
+- explainability/: Grad-CAM, SHAP, and LIME implementations
+- train.py: Model training script
+- test.py: Model evaluation script
+- notebooks/: Original implementation notebooks
+
